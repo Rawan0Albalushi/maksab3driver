@@ -30,7 +30,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.sixamtech.sixam_mart_delivery_app"
+        applicationId = "om.thawani.deliveryman"
         minSdk = flutter.minSdkVersion
         targetSdk = 36
         versionCode = flutter.versionCode
