@@ -2,6 +2,8 @@ html,
 body {
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
     background-color: #FFFFFF;
 }
 
@@ -74,14 +76,13 @@ body {
         calc(-5*var(--w)) 0 #000,calc(-6*var(--w)) 0 #000,calc(-7*var(--w)) 0 #000,calc(-8*var(--w)) 0 #000,calc(-9*var(--w)) -10px #000}
 }
 
-/**/
-body {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  grid-auto-rows: 130px;
-  place-items:center;
-}
-
-* {
-  box-sizing: border-box;
+/* The loading spinner demo styled body as a centered grid. That shrinks
+   Flutter's host element to its content size (about 1px) and the app bar
+   overflows. Keep the view pinned to the viewport instead. */
+flutter-view {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }

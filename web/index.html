@@ -31,6 +31,10 @@
         navigator.serviceWorker.register("/firebase-messaging-sw.js");
       });
     }
+    window.addEventListener('flutter-first-frame', function () {
+      var splash = document.querySelector('.center');
+      if (splash) splash.remove();
+    });
   </script>
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClA429Qns5NeuKz4pgBSaXf7NyII77WXY"></script>
